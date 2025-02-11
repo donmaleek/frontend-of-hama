@@ -1,14 +1,17 @@
 {
   "name": "front-end",
   "version": "1.0.0",
-  "description": "",
+  "description": "A frontend web application for Hama Bwana", 
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "react-scripts build", 
+    "test": "react-scripts test", 
+    "deploy": "npm run build && echo 'Deploy successful'", 
+    "eject": "react-scripts eject" 
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["react", "web", "hama", "frontend"], 
+  "author": "Eng. Mathias Alfred", 
   "license": "ISC",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
@@ -49,5 +52,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "homepage": "https://donmaleek.github.io/hama-bwana"
 }
