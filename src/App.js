@@ -11,14 +11,14 @@ import Footer from './components/Footer';
 import Register from './components/Register';
 import Login from './components/Login';
 import Profile from './components/Profile';
-import RecentRentals from './components/RecentRentals'; // Import RecentRentals component
+import RecentRentals from './components/RecentRentals';
 
 import './App.css';
 import logo from './assets/logo2.png';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}> {/* Add basename here */}
       <div className="App">
         <Navbar />
         <Routes>
@@ -31,7 +31,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/RecentRentals" element={<RecentRentals />} /> {/* Correct route */}
+          <Route path="/recent-rentals" element={<RecentRentals />} /> {/* Correct route case */}
         </Routes>
         <Footer />
       </div>
