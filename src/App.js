@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Home from './components/Home';
 import FeaturedRentals from './components/FeaturedRentals';
 import About from './components/AboutUsSection';
@@ -14,11 +14,10 @@ import Profile from './components/Profile';
 import RecentRentals from './components/RecentRentals';
 
 import './App.css';
-import logo from './assets/logo2.png';
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}> {/* Add basename here */}
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
         <Navbar />
         <Routes>
@@ -31,7 +30,10 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/recent-rentals" element={<RecentRentals />} /> {/* Correct route case */}
+          <Route path="/recent-rentals" element={<RecentRentals />} />
+
+          {/* Redirect all 404 pages to Home */}
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
         <Footer />
       </div>
