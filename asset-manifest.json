@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/hama-bwana/static/css/main.159559f4.css",
+    "main.js": "/hama-bwana/static/js/main.aea24daf.js",
+    "static/js/488.039b10bc.chunk.js": "/hama-bwana/static/js/488.039b10bc.chunk.js",
+    "static/media/logo2.png": "/hama-bwana/static/media/logo2.0437aea8841c4cdd720a.png",
+    "static/media/logo1.png": "/hama-bwana/static/media/logo1.6c3194eea70e348850eb.png",
+    "static/media/herosectionback.jpeg": "/hama-bwana/static/media/herosectionback.ab99daa98e8a67fe8c8f.jpeg",
+    "index.html": "/hama-bwana/index.html",
+    "main.159559f4.css.map": "/hama-bwana/static/css/main.159559f4.css.map",
+    "main.aea24daf.js.map": "/hama-bwana/static/js/main.aea24daf.js.map",
+    "488.039b10bc.chunk.js.map": "/hama-bwana/static/js/488.039b10bc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.159559f4.css",
+    "static/js/main.aea24daf.js"
+  ]
+}
